@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <script>
+        var person = {
+
+            print: function (city, country) {
+                return this.firstname + "  " + this.lastname + " " + city + " " + country;
+            }
+        }
+
+        var emp = {
+            firstname: "fname",
+            lastname: "lname"
+        }
+        var customer = {
+            firstname: "cfname",
+            lastname: "clname"
+        }
+
+        //console.log(person.print.call(emp));
+        //console.log(person.print.call(customer));
+        console.log(person.print.call(emp, "Pune", "India"));
+        console.log(person.print.apply(emp, ["Pune", "India"]));
+
+
+       // Call is used to call another object
+       // If we want to pass separate parameters we can use call()
+ 
+       // If we want to pass an array to it we need to use apply()
+
+
+    </script>
+             
+
+</body>
+</html>

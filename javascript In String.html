@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <div id="div1">
+
+    </div>
+    <script>
+
+       // working with string in Javascript
+        var text = "  this,is,sample,text  ";
+
+        console.log(text.charAt(6));
+        var text2 = "Hello";
+
+        var result = text.concat(" ",text2," ","Good Morning");
+        console.log(result);
+        console.log(result.length);
+
+       // var txt = text.slice(4);
+        var txt = text.slice(4, 11);
+
+        var data = text.split(",");
+        //var data = text.split(" ", 3);
+        console.log(data);
+        console.log(txt);
+        console.log(text.toUpperCase());
+        console.log(text.toLowerCase());
+        // trim
+        text.trim();
+        document.getElementById("div1").innerHTML = data;
+
+    </script>
+
+
+</body>
+</html>

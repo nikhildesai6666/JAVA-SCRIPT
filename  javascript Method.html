@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <div id="div1">
+
+    </div>
+    <script>
+        var numbers = [1, 2, 4, 5, 6];
+        console.log(numbers);
+        numbers.push(7);//ADD no in last
+        numbers.unshift(0);//ADD no in first
+        numbers[2] = 3;//Add no index 2
+        numbers.pop();//remove no at last
+        numbers.shift();//remove no at first
+        numbers.sort();//sort no
+        //numbers.revers();//revers no
+
+        numbers.splice(1, 0, -1, 0);//replace no or add no or remove no and print this
+       // (index,remove no,1 print no,2 print no)
+
+        var data = "<ol type='i'>";
+        for (var i = 0; i < numbers.length; i++) {
+            data += "<li>" + numbers[i] + "</li>";
+
+        }
+
+        document.getElementById("div1").innerHTML = data;
+
+
+    </script>
+</body>
+</html>
